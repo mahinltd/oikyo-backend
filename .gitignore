@@ -9,9 +9,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 src/uploads/temp/
-package-lock.json
+
 .next/
 .out/
 .serverless/
 .webpack/
-package.json
+
