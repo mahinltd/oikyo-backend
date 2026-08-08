@@ -25,6 +25,9 @@ const corsOrigins = process.env.CORS_ORIGIN
 
 app.use(cors({ origin: corsOrigins, credentials: true }));
 
+// Explicitly handle preflight requests for all routes
+app.options('*', cors({ origin: corsOrigins, credentials: true }));
+
 // Enable Gzip/Brotli Compression to drastically reduce JSON response size
 app.use(compression()); 
 
