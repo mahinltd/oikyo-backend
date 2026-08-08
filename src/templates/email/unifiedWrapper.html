@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f6f8; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4f6f8; padding: 40px 0;">
+        <tr>
+            <td align="center">
+                <table width="100%" max-width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto; border: 1px solid #eaeaea;">
+                    
+                    <!-- Header with Dynamic OIKYO Text Logo -->
+                    <tr>
+                        <td align="center" style="padding: 40px 20px 30px; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://oikyo.me" target="_blank" style="text-decoration: none;">
+                                <img src="https://res.cloudinary.com/damfcrt68/image/upload/v1784455592/oikyo_text_uhi9w5.png" alt="OIKYO" width="160" style="display: block; border: 0; outline: none;">
+                            </a>
+                        </td>
+                    </tr>
+                    
+                    <!-- Dynamic Body Content Injected via Notification Engine -->
+                    <tr>
+                        <td style="padding: 40px 40px 20px; color: #333333; line-height: 1.6; font-size: 16px;">
+                            {{{dynamicContent}}}
+                        </td>
+                    </tr>
+                    
+                    <!-- Unified Enterprise Footer -->
+                    <tr>
+                        <td style="background-color: #fafbfc; padding: 30px 40px; text-align: center; border-top: 1px solid #f0f0f0;">
+                            <img src="https://res.cloudinary.com/damfcrt68/image/upload/v1784311427/oikyo_icon_ceiilh.webp" alt="OIKYO Icon" width="32" style="display: block; margin: 0 auto 15px; border: 0; outline: none; opacity: 0.8;">
+                            
+                            <p style="margin: 0 0 10px; font-size: 13px; color: #888888; line-height: 1.5;">
+                                &copy; {{currentYear}} OIKYO Mahin Ltd. All rights reserved.<br>
+                                Need help? Contact our <a href="mailto:{{supportEmail}}" style="color: #666666; text-decoration: underline; font-weight: 500;">Support Team</a>.
+                            </p>
+                            
+                            <p style="margin: 0 0 15px; font-size: 11px; color: #999999; line-height: 1.5;">
+                                This is an automatically generated email from the OIKYO Commerce Engine. If you were not expecting this email, you may safely ignore it. For details on how we protect your information, please review our <a href="https://oikyo.me/privacy" style="color: #999999; text-decoration: underline;">Privacy Policy</a>.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
