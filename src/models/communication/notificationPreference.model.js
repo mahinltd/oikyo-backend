@@ -11,7 +11,7 @@ const notificationPreferenceSchema = new mongoose.Schema({
     },
     userRole: { 
         type: String, 
-        enum: ['admin', 'staff', 'customer'], 
+        enum: ['admin', 'super_admin', 'staff', 'customer'], 
         required: true 
     },
     // Array to store specific preferences for specific events

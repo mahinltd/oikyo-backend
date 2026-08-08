@@ -2,7 +2,7 @@
 
 const emailEngineService = require('./emailEngine.service');
 const fcmPushAdapter = require('./fcmPushAdapter.service'); // Activated FCM Push Adapter
-const InAppNotification = require('./inAppNotification.model'); // Activated In-App Model
+const InAppNotification = require('../../models/communication/inAppNotification.model'); // Updated path
 const NotificationAudit = require('../../models/communication/notificationAudit.model');
 const { EventRouting } = require('../../models/communication/notificationConfig.model');
 const preferenceService = require('./notificationPreference.service');

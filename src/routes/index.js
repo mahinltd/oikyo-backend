@@ -14,6 +14,8 @@ router.use('/auth', require('./auth.routes'));
 // Exposes safe DTOs (Data Transfer Objects) to the frontend, hiding sensitive data
 router.use('/public/products', require('./public/product.routes'));
 router.use('/storefront/assistant', require('./storefront/coAssistant.routes')); // AI Assistant for public users
+router.use('/public/checkout', require('./public/checkout.routes'));
+router.use('/customer', require('./public/customerPortal.routes'));
 
 // ==========================================
 // 3. WME (Website Management Engine) Routes
@@ -41,6 +43,7 @@ router.use('/wme/notification-templates', require('./wme/notificationTemplate.ro
 // ==========================================
 // Product Curation & Operations
 router.use('/admin/products', require('./admin/productEditor.routes'));
+router.use('/admin/dashboard', require('./admin/dashboard.routes'));
 router.use('/admin/manual-import', require('./admin/manualImport.routes'));
 router.use('/admin/suppliers', require('./admin/supplier.routes'));
 router.use('/admin/review-queue', require('./admin/reviewQueue.routes'));
@@ -51,6 +54,9 @@ router.use('/admin/fulfillment', require('./admin/fulfillment.routes'));
 // Taxonomy & Structure (WME Taxonomy)
 router.use('/admin/taxonomy', require('./admin/taxonomy.routes'));
 
+// Payment Verification
+router.use('/admin/payments', require('./admin/payment.routes')); // Added payment routes
+
 // AI Automation
 router.use('/admin/ai-editor', require('./admin/aiEditorAssistant.routes'));
 router.use('/admin/ai-providers', require('./admin/aiProvider.routes'));
@@ -60,6 +66,7 @@ router.use('/admin/ai-providers', require('./admin/aiProvider.routes'));
 // ==========================================
 // Communication & Preferences
 router.use('/notifications/preferences', require('./communication/notificationPreference.routes'));
+router.use('/notifications/fcm-token', require('./communication/fcmToken.routes')); // Added FCM token routes
 // router.use('/admin/notifications/audit', require('./communication/notificationAudit.routes')); // Keep commented until created
 
 module.exports = router;
